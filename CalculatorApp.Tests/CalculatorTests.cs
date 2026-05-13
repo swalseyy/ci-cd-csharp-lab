@@ -18,4 +18,12 @@ public class CalculatorTests
         // Assert
         Assert.Equal(5, result);
     }
+
+    [Fact]
+    public void Subtract_ShouldReturnDifference()
+    {
+        var calc = new Calculator();
+        int result = calc.Subtract(5, 3);
+        Assert.Equal(2, result);
+    }
 }
